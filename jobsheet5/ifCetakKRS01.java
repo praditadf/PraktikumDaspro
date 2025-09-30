@@ -1,3 +1,4 @@
+package jobsheet5;
 import java.util.Scanner;
 public class ifCetakKRS01 {
     public static void main(String[] args) {

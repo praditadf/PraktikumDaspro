@@ -1,37 +1,30 @@
+package jobsheet5;
 import java.util.Scanner;
-public class switchCetakKRS01 {
+public class ifElseCetakKRS01 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("---Cetak KRS SIAKAD---");
         System.out.println("Masukkan Semester saat ini: ");
         int semester=sc.nextInt();
 
-        switch (semester) {
-            case 1:
+        if (semester==1){
             System.out.println("Krs Semester 1 ditampilkan");
-            break;
-            case 2:
+        }else if(semester==2){
             System.out.println("Krs Semester 2 ditampilkan");
-            break;
-            case 3:
+        }else if(semester==3){
             System.out.println("Krs Semester 3 ditampilkan");
-            break;
-            case 4:
+        }else if(semester==4){
             System.out.println("Krs Semester 4 ditampilkan");
-            break;
-            case 5:
+        }else if(semester==5){
             System.out.println("Krs Semester 5 ditampilkan");
-            break;
-            case 6:
+        }else if(semester==6){
             System.out.println("Krs Semester 6 ditampilkan");
-            break;
-            case 7:
+        }else if(semester==7){
             System.out.println("Krs Semester 7 ditampilkan");
-            break;
-            case 8:
+        }else if(semester==8){
             System.out.println("Krs Semester 8 ditampilkan");
-            break;
-            default:
+        }
+        else{
             System.out.println("Semester tidak valid");
         }
     }
