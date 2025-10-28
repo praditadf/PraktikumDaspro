@@ -11,7 +11,7 @@ public class Triangle01 {
             while (j < i) {
                 System.out.print("*");
                 j++;
-            }
+            }System.out.println();
             i++;
         }
     }
