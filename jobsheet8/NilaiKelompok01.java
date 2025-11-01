@@ -5,6 +5,8 @@ public class NilaiKelompok01 {
         Scanner sc = new Scanner(System.in);
         int i, nilai;   //Mendeklarasikan variabel i untuk kelompok dan nilai untuk nilai kelompok
         float totalNilai, rataNilai;    //mendeklarasikan totalNilai untuk jumlah nilai yang sudah di inputkan dan rataNilai untuk rata-rata nilai setiap kelompok
+        float rataTertinggi = 0;
+        int kelTertinggi = 0;
         i = 1;  //Inisialisasi i dengan 1 
         while (i <= 6) {    //Jumlah kelompok ada 6 dan program akan berjalan sampai i = 6
             System.out.println("Kelompok " + i);    //Untuk menampilkan nomor kelompok  
@@ -17,7 +19,13 @@ public class NilaiKelompok01 {
             }
             rataNilai = totalNilai/5;   //Untuk menghitung rata-rata nilai dengan membagi totalNilai dengan 5
             System.out.println("Kelompok " +i+ ": nilai rata-rata = " +rataNilai);  //Untuk menampilkan nilai rata-rata tiap kelompok
+            if (rataNilai > rataTertinggi) {
+                rataTertinggi = rataNilai;
+                kelTertinggi = i;
+            }
+
             i++;    //Lanjut ke kelompok berikutnya
         }
+        System.out.println("Kelompok dengan rata-rata tertinggi adalah kelompok ke "+kelTertinggi);
     }
 }
