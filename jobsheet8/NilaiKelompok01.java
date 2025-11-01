@@ -17,7 +17,6 @@ public class NilaiKelompok01 {
             }
             rataNilai = totalNilai/5;   //Untuk menghitung rata-rata nilai dengan membagi totalNilai dengan 5
             System.out.println("Kelompok " +i+ ": nilai rata-rata = " +rataNilai);  //Untuk menampilkan nilai rata-rata tiap kelompok
-            System.out.println();
             i++;    //Lanjut ke kelompok berikutnya
         }
     }
