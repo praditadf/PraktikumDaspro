@@ -3,7 +3,11 @@ import java.util.Scanner;
 public class Siakad01 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int [][] nilai = new int[4][3];
+        System.out.print("Masukkan jumlah siswa : ");
+        int siswa = sc.nextInt();
+        System.out.print("Masukkan jumlah matkul : ");
+        int matkul = sc.nextInt();
+        int [][] nilai = new int[siswa][matkul];
         for (int i = 0; i < nilai.length; i++) {
             System.out.println("Input nilai mahasiswa ke-"+(i+1));
             double totalPersiswa = 0;
